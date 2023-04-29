@@ -54,8 +54,9 @@ const sliderElements = [
 ];
 
 function useInterval(callback, delay, index) {
+ 
   const savedCallback = useRef();
-
+  
   useEffect(() => {
     savedCallback.current = callback;
   }, [callback]);
